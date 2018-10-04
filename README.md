@@ -1,12 +1,12 @@
-[![Docker Pulls](https://img.shields.io/docker/pulls/scitran/dwi-flip-bvec.svg)](https://hub.docker.com/r/scitran/dwi-flip-bvec/)
-[![Docker Stars](https://img.shields.io/docker/stars/scitran/dwi-flip-bvec.svg)](https://hub.docker.com/r/scitran/dwi-flip-bvec/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vistalab/dwi-flip-bvec.svg)](https://hub.docker.com/r/vistalab/dwi-flip-bvec/)
+[![Docker Stars](https://img.shields.io/docker/stars/vistalab/dwi-flip-bvec.svg)](https://hub.docker.com/r/vistalab/dwi-flip-bvec/)
 
 
-# scitran/dwi-flip-bvec
+# vistalab/dwi-flip-bvec
 Flip the sign of the bvec vector in the specified vector(s).
 
 ### Build Docker Image
-`docker build -t scitran/dwi-flip-bvec .`
+`docker build -t vistalab/dwi-flip-bvec .`
 
 
 ### Run Locally
@@ -22,7 +22,7 @@ Then run the container:
 docker run -it --rm \
        -v `pwd`/input:/flywheel/v0/input/ \
        -v `pwd`/output/:/flywheel/v0/output/ \
-       scitran/dwi-flip-bvec
+       vistalab/dwi-flip-bvec
 ```
 
 The results will be:
