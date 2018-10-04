@@ -16,24 +16,24 @@
   },
   "config": {
     "userProvidedAcpc": {
-      "default": true,
+      "default": false,
       "type": "boolean",
       "description": "Use AC-PC coordinates provided by the user in the fields here (true/false, default=false)"
     },
     "AC": {
-      "default": "[128, 140, 60]",
+      "default": "128, 140, 60",
       "type": "string",
       "optional":"true",
       "description": "Anterior Commissure coordinates (DEFAULT='[128, 140, 60]')."
     },
     "PC": {
-      "default": "[128, 110, 60]",
+      "default": "128, 110, 60",
       "type": "string",
       "optional":"true",
       "description": "Posterior Commissure coordinates (DEFAULT='[128, 110, 60]')'."
     },
     "MS": {
-      "default": "[128, 135, 85]",
+      "default": "128, 135, 85",
       "type": "string",
       "optional":"true",
       "description": "Mid Sagittal coordinates (DEFAULT='[128, 135, 85]')'."
