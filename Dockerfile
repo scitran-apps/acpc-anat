@@ -12,10 +12,6 @@ COPY manifest.json ${FLYWHEEL}/manifest.json
 ADD /msa /msa
 
 
-COPY parse_config.py ${FLYWHEEL}/parse_config.py
-RUN chmod +x ${FLYWHEEL}/parse_config.py
-
-
 # Run script
 COPY run ${FLYWHEEL}/run
 RUN chmod +x ${FLYWHEEL}/run

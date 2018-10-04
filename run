@@ -1,4 +1,5 @@
 #! /bin/bash
+
 #
 CONTAINER="[scitran/acpc-anat]"
 echo -e "$CONTAINER  Initiated"
@@ -11,12 +12,7 @@ INPUT_DIR=$FLYWHEEL_BASE/input
 OUTPUT_DIR=$FLYWHEEL_BASE/output
 # Set paths to input files
 anatomical=$(find $FLYWHEEL_BASE/input/anatomical/ -type f -name "*.nii*")
-PARAMS_FILE=${FLYWHEEL_BASE}/config_parsed.json
 CONFIG_FILE=${FLYWHEEL_BASE}/config.json
-
-# Convert the config json to a params json file
-$FLYWHEEL_BASE/parse_config.py --input_file ${PARAMS_FILE} --output_file ${CONFIG_FILE} --input_dir ${INPUT_DIR} --output_dir ${OUTPUT_DIR}
-
 
 
 # Make sure that /output directory exists
@@ -63,7 +59,7 @@ fi
 
 
 # Run the Matlab executable
-time /msa/run_acpcAnat.sh "${MCR_ROOT}" "${anatomical}" "${userProvidedAcpc}" "${AC}" "${PC}" "${MS}" "${OUTPUT_DIR}"
+time /msa/run_acpcAnat.sh "${MCR_ROOT}" "${anatomical}" "${userProvidedAcpc}" "${AC}" "${PC}" "${MS}"
 
 
 # Check exit status
