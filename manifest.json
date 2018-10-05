@@ -10,9 +10,9 @@
   "flywheel": {
     "suite": "VISTA Lab"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "custom": {
-    "docker-image": "vistalab/acpc-anat:1.0.1"
+    "docker-image": "vistalab/acpc-anat:1.0.2"
   },
   "config": {
     "userProvidedAcpc": {
